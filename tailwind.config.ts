@@ -11,6 +11,7 @@ const config: Config = {
 			primary: "#3D3D3D",
 			secundary: "#9D77DB",
 			tertiary: "#333D3D3D",
+			white: "#FFFFFF",
 		},
 		extend: {
 			backgroundImage: {
