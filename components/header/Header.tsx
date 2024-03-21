@@ -19,7 +19,7 @@ export default function Header() {
 			</Link>
 			<Link href="/carrinho" className="flex justify-between items-center gap-1">
 				<Image src={carrinhoDeComprasIcon} alt="ícone carrinho de compras" />
-				<p className="w-10 text-center text-white rounded-full bg-secundary">100</p>
+				<p className="w-10 text-center text-white rounded-luand bg-secundary">1</p>
 			</Link>
 		</header>
 	);
