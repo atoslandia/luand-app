@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -16,7 +17,17 @@ const config: Config = {
 		borderRadius: {
 			luand: "0.4rem",
 		},
+		extend: {
+			keyframes: {
+				"toggle-menu": {
+					"0%": { transform: "translateX(-100vw)" },
+					"100%": { transform: "translateX(0)" },
+				},
+			},
+			animation: { "toggle-menu": "toggle-menu 1s" },
+		},
 	},
+
 	plugins: [],
 };
 export default config;

@@ -6,13 +6,12 @@ import carrinhoDeComprasIcon from "@/assets/carrinho-de-compras.svg";
 
 import Titulo from "@/components/titulo/Titulo";
 import Link from "next/link";
+import Menu from "./menu/Menu";
 
 export default function Header() {
 	return (
 		<header className="sticky top-0 w-full h-14 p-2 flex items-center justify-between border-b-2 border-tertiary bg-white">
-			<div className="w-12">
-				<Image src={menuIcon} alt="ícone menu" />
-			</div>
+			<Menu />
 			<Link href="/" className="flex items-center gap-2">
 				<Image src={logoIcon} alt="ícone logo" />
 				<Titulo>Luand</Titulo>

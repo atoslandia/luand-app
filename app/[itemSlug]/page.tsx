@@ -17,7 +17,7 @@ const ItemPage: FC<ItemPageProps> = ({ params }) => {
 				alt="teste"
 				className="w-full h-[30rem] rounded-luand overflow-hidden object-none"
 			/>
-			<Titulo>{params.itemSlug}</Titulo>
+			<Titulo>Referencia: {params.itemSlug}</Titulo>
 			<p className="self-start">
 				T-Shirts de material Menegotti 100% algodão.
 				<br />
