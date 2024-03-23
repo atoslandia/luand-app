@@ -1,10 +1,11 @@
-import lixeiraIcon from "@/assets/lixeira.svg";
-import Image from "next/image";
+import Botao from "@/components/botao/Botao";
+import Footer from "@/components/footer/Footer";
+import MainPadrao from "@/components/main-padrao/MainPadrao";
 
 export default function CarrinhoPage() {
 	return (
 		<>
-			<main className="p-2 w-full flex flex-col items-center justify-between gap-2">
+			<MainPadrao>
 				<table className="w-full border-collapse border-spacing-9 rounded-luand overflow-hidden ring-2 m-1 ring-tertiary">
 					<thead className="bg-tertiary">
 						<tr className="text-center">
@@ -28,14 +29,14 @@ export default function CarrinhoPage() {
 					</tbody>
 				</table>
 				<div className="h-32"></div>
-			</main>
-			<div className="fixed bottom-0 p-2 w-full bg-white border-t-2 border-tertiary flex justify-between">
+			</MainPadrao>
+			<Footer>
 				<div>
 					<p>Total</p>
 					<p>R$19.00</p>
 				</div>
-				<button className="px-5 py-1 text-white bg-secundary rounded-luand">Enviar pedido</button>
-			</div>
+				<Botao>Enviar pedido</Botao>
+			</Footer>
 		</>
 	);
 }

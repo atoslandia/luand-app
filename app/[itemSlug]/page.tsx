@@ -1,9 +1,13 @@
-import Seletor from "@/components/seletor/Seletor";
 import React, { FC } from "react";
 
 import testeImagem from "@/public/teste.png";
 import Image from "next/image";
 import Titulo from "@/components/titulo/Titulo";
+import Botao from "@/components/botao/Botao";
+import MainPadrao from "@/components/main-padrao/MainPadrao";
+import Footer from "@/components/footer/Footer";
+import Seletor from "@/components/seletor/Seletor";
+import SeletorCor from "@/components/seletor/seletor-cor/SeletorCor";
 
 interface ItemPageProps {
 	params: { itemSlug: string };
@@ -11,33 +15,42 @@ interface ItemPageProps {
 
 const ItemPage: FC<ItemPageProps> = ({ params }) => {
 	return (
-		<main className="p-2 flex w-full flex-col items-center gap-2">
-			<Image
-				src={testeImagem}
-				alt="teste"
-				className="w-full h-[30rem] rounded-luand overflow-hidden object-none"
-			/>
-			<Titulo>Referencia: {params.itemSlug}</Titulo>
-			<p className="self-start">
-				T-Shirts de material Menegotti 100% algodão.
-				<br />
-				Oferece uma variedade de designs exclusivos e confortáveis para os clientes.
-			</p>
-			<div className="h-32"></div>
-			<div className="fixed bottom-0 p-2 w-full bg-white border-t-2 border-tertiary grid grid-cols-2 gap-2">
-				<Seletor
-					titulo="Cor"
-					listaDeOpcoes={["#ef53c5", "#114042", "#35bca4", "#88707e", "#d51229", "#d47c1e", "#df29f4"]}
+		<>
+			<MainPadrao>
+				<Image
+					src={testeImagem}
+					alt="teste"
+					className="w-full h-[30rem] rounded-luand overflow-hidden object-none"
 				/>
-				<Seletor titulo="Tamanho" listaDeOpcoes={["P", "M", "G", "GG"]} />
+				<Titulo>Referencia: {params.itemSlug}</Titulo>
+				<p className="self-start">
+					T-Shirts de material Menegotti 100% algodão.
+					<br />
+					Oferece uma variedade de designs exclusivos e confortáveis para os clientes.
+				</p>
+				<div className="h-32"></div>
+			</MainPadrao>
+			<Footer>
+				<SeletorCor
+					listaDeCores={[
+						"bg-[#ef53c5]",
+						"bg-[#114042]",
+						"bg-[#35bca4]",
+						"bg-[#88707e]",
+						"bg-[#d51229]",
+						"bg-[#d47c1e]",
+						"bg-[#df29f4]",
+					]}
+				/>
+				<Seletor listaDeOpcoes={["P", "M", "G", "GG"]} />
 				<input
 					placeholder="Quantidade"
 					type="number"
 					className="p-2 border-2 border-tertiary rounded-luand appearance-none"
 				/>
-				<button className="px-5 py-1 text-white bg-secundary rounded-luand">Adicionar ao carrinho</button>
-			</div>
-		</main>
+				<Botao>Adicionar ao carrinho</Botao>
+			</Footer>
+		</>
 	);
 };
 

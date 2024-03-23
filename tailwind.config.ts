@@ -19,12 +19,13 @@ const config: Config = {
 		},
 		extend: {
 			keyframes: {
-				"toggle-menu": {
-					"0%": { transform: "translateX(-100vw)" },
-					"100%": { transform: "translateX(0)" },
-				},
+				"toggle-menu": { "0%": { transform: "translateX(-100vw)" }, "100%": { transform: "translateX(0)" } },
+				"fade-in": { "0%": { opacity: "0%" }, "100%": { opacity: "100%" } },
 			},
-			animation: { "toggle-menu": "toggle-menu 1s" },
+			animation: {
+				"toggle-menu": "toggle-menu 1s",
+				"fade-in": "fade-in 0.5s",
+			},
 		},
 	},
 

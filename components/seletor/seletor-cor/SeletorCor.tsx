@@ -4,21 +4,22 @@ import { FC, useState } from "react";
 import expandirIcon from "@/assets/expandir.svg";
 import retrairIcon from "@/assets/retrair.svg";
 import Image from "next/image";
+import Cor from "../cor/Cor";
 
-interface SeletorProps {
-	listaDeOpcoes: string[];
+interface SeletorCorProps {
+	listaDeCores: string[];
 }
 
-const Seletor: FC<SeletorProps> = ({ listaDeOpcoes }) => {
+const SeletorCor: FC<SeletorCorProps> = ({ listaDeCores }) => {
 	const [isExpandido, setIsExpandido] = useState(false);
 
-	const [titulo, setTitulo] = useState(listaDeOpcoes[0]);
+	const [titulo, setTitulo] = useState(listaDeCores[0]);
 
 	function expandir() {
 		setIsExpandido(!isExpandido);
 	}
 
-	function selecionarOpcao(novoTitulo: string) {
+	function selecionarCor(novoTitulo: string) {
 		setTitulo(novoTitulo);
 		expandir();
 	}
@@ -27,13 +28,13 @@ const Seletor: FC<SeletorProps> = ({ listaDeOpcoes }) => {
 		<>
 			{isExpandido && (
 				<ul className="absolute bottom-2 w-full p-2 border-2 border-tertiary bg-white rounded-luand">
-					{listaDeOpcoes.map((opcao) => {
+					{listaDeCores.map((cor) => {
 						return (
 							<li
-								onClick={() => selecionarOpcao(opcao)}
-								key={opcao}
+								onClick={() => selecionarCor(cor)}
+								key={cor}
 								className="h-10 flex justify-center items-center cursor-pointer hover:bg-tertiary">
-								<span>{opcao}</span>
+								<Cor>{cor}</Cor>
 							</li>
 						);
 					})}
@@ -43,7 +44,7 @@ const Seletor: FC<SeletorProps> = ({ listaDeOpcoes }) => {
 				<button
 					onClick={expandir}
 					className="p-2 flex justify-between border-2 border-tertiary rounded-luand gap-2">
-					{titulo}
+					<Cor>{titulo}</Cor>
 					<Image src={isExpandido ? expandirIcon : retrairIcon} alt="icone seletor" />
 				</button>
 			</div>
@@ -51,4 +52,4 @@ const Seletor: FC<SeletorProps> = ({ listaDeOpcoes }) => {
 	);
 };
 
-export default Seletor;
+export default SeletorCor;

@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import menuIcon from "@/assets/menu.svg";
 import logoIcon from "@/assets/logo.svg";
 import carrinhoDeComprasIcon from "@/assets/carrinho-de-compras.svg";
 
