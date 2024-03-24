@@ -1,7 +1,6 @@
-import Botao from "@/components/botao/Botao";
+import BotaoLink from "@/components/botao-link/BotaoLink";
 import MainPadrao from "@/components/main-padrao/MainPadrao";
 import Titulo from "@/components/titulo/Titulo";
-import Link from "next/link";
 
 export default function EmpresaPage() {
 	return (
@@ -14,7 +13,7 @@ export default function EmpresaPage() {
 				required
 				className="p-2 border-2 border-tertiary rounded-luand"
 			/>
-			<Link href="empresa/estoque">Entrar</Link>
+			<BotaoLink href="empresa/relatorios">Entrar</BotaoLink>
 		</MainPadrao>
 	);
 }

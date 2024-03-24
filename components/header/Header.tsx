@@ -12,11 +12,11 @@ export default function Header() {
 		<header className="sticky top-0 w-full h-14 p-2 flex items-center justify-between border-b-2 border-tertiary bg-white">
 			<Menu />
 			<Link href="/" className="flex items-center gap-2">
-				<Image src={logoIcon} alt="ícone logo" />
+				<Image src={logoIcon} alt="icone logo" />
 				<Titulo>Luand</Titulo>
 			</Link>
 			<Link href="/carrinho" className="flex justify-between items-center gap-1">
-				<Image src={carrinhoDeComprasIcon} alt="ícone carrinho de compras" />
+				<Image src={carrinhoDeComprasIcon} alt="icone carrinho de compras" />
 				<p className="w-10 text-center text-white rounded-luand bg-secundary">1</p>
 			</Link>
 		</header>

@@ -1,14 +1,10 @@
-import Botao from "@/components/botao/Botao";
-import MainPadrao from "@/components/main-padrao/MainPadrao";
 import Tabela from "@/components/tabela/Tabela";
-import Titulo from "@/components/titulo/Titulo";
+import EmpresaLayout from "@/components/empresa-layout/EmpresaLayout";
 
 export default function EstoquePage() {
 	return (
-		<MainPadrao>
-			<Titulo>Estoque</Titulo>
+		<EmpresaLayout>
 			<Tabela colunas={["Ref.", "Cor", "Tamanho", "Quantidade"]} />
-			<Botao>Entrar</Botao>
-		</MainPadrao>
+		</EmpresaLayout>
 	);
 }
