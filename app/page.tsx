@@ -1,4 +1,4 @@
-import Item from "@/components/item/Item";
+import Item from "@/components/item/item";
 
 export default function CatalogoPage() {
 	return (

@@ -3,9 +3,9 @@ import Image from "next/image";
 import logoIcon from "@/assets/logo.svg";
 import carrinhoDeComprasIcon from "@/assets/carrinho-de-compras.svg";
 
-import Titulo from "@/components/titulo/Titulo";
+import Titulo from "@/components/titulo/titulo";
 import Link from "next/link";
-import Menu from "./menu/Menu";
+import Menu from "./menu/menu";
 
 export default function Header() {
 	return (

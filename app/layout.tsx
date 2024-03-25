@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import Header from "@/components/header/header";
 
 const beVietnamProFont = Be_Vietnam_Pro({ weight: "500", subsets: ["latin"] });
 

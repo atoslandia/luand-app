@@ -1,5 +1,5 @@
-import Tabela from "@/components/tabela/Tabela";
-import EmpresaLayout from "@/components/empresa-layout/EmpresaLayout";
+import Tabela from "@/components/tabela/tabela";
+import EmpresaLayout from "@/components/empresa-layout/empresa-layout";
 
 export default function EstoquePage() {
 	return (

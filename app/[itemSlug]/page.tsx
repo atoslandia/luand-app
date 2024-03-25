@@ -2,12 +2,12 @@ import React, { FC } from "react";
 
 import testeImagem from "@/public/teste.png";
 import Image from "next/image";
-import Titulo from "@/components/titulo/Titulo";
-import Botao from "@/components/botao/Botao";
-import MainPadrao from "@/components/main-padrao/MainPadrao";
-import Footer from "@/components/footer/Footer";
-import Seletor from "@/components/seletor/Seletor";
-import SeletorCor from "@/components/seletor/seletor-cor/SeletorCor";
+import Titulo from "@/components/titulo/titulo";
+import Botao from "@/components/botao/botao";
+import MainPadrao from "@/components/main-padrao/main-padrao";
+import Footer from "@/components/footer/footer";
+import Seletor from "@/components/seletor/seletor";
+import SeletorCor from "@/components/seletor/seletor-cor/seletor-cor";
 
 interface ItemPageProps {
 	params: { itemSlug: string };

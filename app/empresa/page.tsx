@@ -1,6 +1,6 @@
-import BotaoLink from "@/components/botao-link/BotaoLink";
-import MainPadrao from "@/components/main-padrao/MainPadrao";
-import Titulo from "@/components/titulo/Titulo";
+import BotaoLink from "@/components/botao-link/botao-link";
+import MainPadrao from "@/components/main-padrao/main-padrao";
+import Titulo from "@/components/titulo/titulo";
 
 export default function EmpresaPage() {
 	return (

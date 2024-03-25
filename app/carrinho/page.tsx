@@ -1,6 +1,6 @@
-import Botao from "@/components/botao/Botao";
-import Footer from "@/components/footer/Footer";
-import MainPadrao from "@/components/main-padrao/MainPadrao";
+import Botao from "@/components/botao/botao";
+import Footer from "@/components/footer/footer";
+import MainPadrao from "@/components/main-padrao/main-padrao";
 
 export default function CarrinhoPage() {
 	return (

@@ -5,7 +5,7 @@ import Image from "next/image";
 import menuIcon from "@/assets/menu.svg";
 import { useState } from "react";
 import Link from "next/link";
-import LinkEstilizado from "@/components/link-estilizado/LinkEstilizado";
+import LinkEstilizado from "@/components/link-estilizado/link-estilizado";
 
 export default function Menu() {
 	const [isExpandido, setIsExpandido] = useState(false);

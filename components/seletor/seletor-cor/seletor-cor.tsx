@@ -4,7 +4,7 @@ import { FC, useState } from "react";
 import expandirIcon from "@/assets/expandir.svg";
 import retrairIcon from "@/assets/retrair.svg";
 import Image from "next/image";
-import Cor from "../cor/Cor";
+import Cor from "../cor/cor";
 
 interface SeletorCorProps {
 	listaDeCores: string[];

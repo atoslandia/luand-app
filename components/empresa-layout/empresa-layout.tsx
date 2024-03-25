@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import LinkEstilizado from "../link-estilizado/LinkEstilizado";
+import LinkEstilizado from "../link-estilizado/link-estilizado";
 
 interface EmpresaLayoutProps {
 	children: ReactNode;

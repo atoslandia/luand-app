@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Be_Vietnam_Pro } from "next/font/google";
-import Titulo from "@/components/titulo/Titulo";
+import Titulo from "@/components/titulo/titulo";
 
 import testeImagem from "@/public/teste.png";
 import Link from "next/link";

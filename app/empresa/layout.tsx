@@ -1,4 +1,4 @@
-import MainPadrao from "@/components/main-padrao/MainPadrao";
+import MainPadrao from "@/components/main-padrao/main-padrao";
 import type { Metadata } from "next";
 import Link from "next/link";
 
