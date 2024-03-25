@@ -8,6 +8,7 @@ import MainPadrao from "@/components/main-padrao/main-padrao";
 import Footer from "@/components/footer/footer";
 import Seletor from "@/components/seletor/seletor";
 import SeletorCor from "@/components/seletor/seletor-cor/seletor-cor";
+import NumeroInput from "@/components/numero-input/numero-input";
 
 interface ItemPageProps {
 	params: { itemSlug: string };
@@ -43,11 +44,7 @@ const ItemPage: FC<ItemPageProps> = ({ params }) => {
 					]}
 				/>
 				<Seletor listaDeOpcoes={["P", "M", "G", "GG"]} />
-				<input
-					placeholder="Quantidade"
-					type="number"
-					className="p-2 border-2 border-tertiary rounded-luand appearance-none"
-				/>
+				<NumeroInput titulo="Quantidade" />
 				<Botao>Adicionar ao carrinho</Botao>
 			</Footer>
 		</>

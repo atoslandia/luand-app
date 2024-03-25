@@ -6,9 +6,9 @@ interface TabelaProps {
 
 const Tabela: FC<TabelaProps> = ({ colunas }) => {
 	return (
-		<table className="w-full border-collapse border-spacing-9 rounded-luand overflow-hidden ring-2 m-1 ring-tertiary">
+		<table className="rounded-luand overflow-hidden ring-2 ring-tertiary">
 			<thead className="bg-tertiary">
-				<tr className="text-center">
+				<tr>
 					{colunas.map((coluna) => (
 						<th key={coluna} className="py-1">
 							{coluna}

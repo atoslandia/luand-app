@@ -1,6 +1,5 @@
 import MainPadrao from "@/components/main-padrao/main-padrao";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Luand App",
