@@ -3,7 +3,7 @@ import EmpresaLayout from "@/components/empresa-layout/empresa-layout";
 
 export default function EstoquePage() {
 	return (
-		<EmpresaLayout>
+		<EmpresaLayout titulo="Estoque">
 			<Tabela colunas={["Ref.", "Cor", "Tamanho", "Quantidade"]} />
 		</EmpresaLayout>
 	);

@@ -13,6 +13,7 @@ const config: Config = {
 			secundary: "#9D77DB",
 			tertiary: "#333D3D3D",
 			white: "#FFFFFF",
+			erro: "#FF6F64",
 		},
 		borderRadius: {
 			luand: "0.4rem",

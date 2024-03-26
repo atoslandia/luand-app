@@ -22,8 +22,8 @@ export default function EstoqueTabela() {
 	}
 
 	return (
-		<div className=" flex flex-col items-center border-2 border-tertiary overflow-hidden rounded-luand">
-			<table className="border-b-2 border-tertiary">
+		<div className="flex flex-col items-center border-2 border-tertiary overflow-hidden rounded-luand">
+			<table className="w-full border-b-2 border-tertiary">
 				<thead className="bg-tertiary">
 					<tr>
 						<th>Cor</th>

@@ -10,7 +10,7 @@ interface LinkEstilizadoProps {
 
 const LinkEstilizado: FC<LinkEstilizadoProps> = ({ href, children, onClick }) => {
 	return (
-		<Link href={href} onClick={onClick} className="p-2 w-full hover:bg-tertiary">
+		<Link href={href} onClick={onClick} className="p-2 w-full hover:bg-tertiary ">
 			{children}
 		</Link>
 	);

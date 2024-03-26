@@ -9,18 +9,19 @@ import Footer from "@/components/footer/footer";
 import Seletor from "@/components/seletor/seletor";
 import SeletorCor from "@/components/seletor/seletor-cor/seletor-cor";
 import NumeroInput from "@/components/numero-input/numero-input";
-import LinkEstilizado from "@/components/link-estilizado/link-estilizado";
+import Link from "next/link";
 
 interface ItemPageProps {
 	params: { itemSlug: string };
 }
 
-const ItemPage: FC<ItemPageProps> = ({ params }) => {
+const ItemPage: FC<ItemPageProps> = async ({ params }) => {
 	const { itemSlug } = params;
+
 	return (
 		<>
 			<MainPadrao>
-				<LinkEstilizado href={`/#${params}`}>Voltar</LinkEstilizado>
+				<Link href={`/#${itemSlug}`}>Voltar</Link>
 				<Image
 					src={testeImagem}
 					alt="teste"
@@ -37,17 +38,14 @@ const ItemPage: FC<ItemPageProps> = ({ params }) => {
 			<Footer>
 				<SeletorCor
 					listaDeCores={[
-						"bg-[#ef53c5]",
-						"bg-[#114042]",
-						"bg-[#35bca4]",
-						"bg-[#88707e]",
-						"bg-[#d51229]",
-						"bg-[#d47c1e]",
-						"bg-[#df29f4]",
+						{ cor: "white", tamanhoP: 1, tamanhoM: 2, tamanhoG: 3 },
+						{ cor: "red", tamanhoP: 1, tamanhoM: 2, tamanhoG: 3 },
+						{ cor: "blue", tamanhoP: 1, tamanhoM: 2, tamanhoG: 3 },
+						{ cor: "black", tamanhoP: 1, tamanhoM: 2, tamanhoG: 3 },
 					]}
 				/>
 				<Seletor listaDeOpcoes={["P", "M", "G", "GG"]} />
-				<NumeroInput titulo="Quantidade" />
+				<NumeroInput name="quantidade" titulo="Quantidade" />
 				<Botao>Adicionar ao carrinho</Botao>
 			</Footer>
 		</>

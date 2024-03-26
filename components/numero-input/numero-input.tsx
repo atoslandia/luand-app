@@ -12,7 +12,7 @@ const NumeroInput: FC<NumeroInputProps> = ({ titulo, name }) => {
 			type="number"
 			name={name}
 			placeholder={titulo}
-			className="p-2 border-2 border-tertiary rounded-luand"
+			className="w-full p-2 border-2 border-tertiary rounded-luand"
 		/>
 	);
 };
