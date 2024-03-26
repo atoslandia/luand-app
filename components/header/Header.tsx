@@ -9,7 +9,7 @@ import Menu from "./menu/menu";
 
 export default function Header() {
 	return (
-		<header className="sticky top-0 w-full h-14 p-2 flex items-center justify-between border-b-2 border-tertiary bg-white">
+		<header className="w-full h-14 p-2 flex items-center justify-between border-b-2 border-tertiary bg-white">
 			<Menu />
 			<Link href="/" className="flex items-center gap-2">
 				<Image src={logoIcon} alt="icone logo" />

@@ -4,9 +4,9 @@ export default function CatalogoPage() {
 	return (
 		<>
 			<main className="p-2 grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-				<Item referencia="42ee108e-4932-54a8-9245-f65396e77366" />
-				<Item referencia="96d440c0-2f64-5319-ba62-e645637a3e5f" />
-				<Item referencia="7d1cf7be-0626-502d-b47b-564e398b2bcb" />
+				<Item referencia="42ee108e-4932-54a8-9245-f65396e77366" id="42ee108e-4932-54a8-9245-f65396e77366" />
+				<Item referencia="96d440c0-2f64-5319-ba62-e645637a3e5f" id="96d440c0-2f64-5319-ba62-e645637a3e5f" />
+				<Item referencia="7d1cf7be-0626-502d-b47b-564e398b2bcb" id="7d1cf7be-0626-502d-b47b-564e398b2bcb" />
 			</main>
 		</>
 	);

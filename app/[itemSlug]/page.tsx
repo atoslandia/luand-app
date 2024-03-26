@@ -9,21 +9,24 @@ import Footer from "@/components/footer/footer";
 import Seletor from "@/components/seletor/seletor";
 import SeletorCor from "@/components/seletor/seletor-cor/seletor-cor";
 import NumeroInput from "@/components/numero-input/numero-input";
+import LinkEstilizado from "@/components/link-estilizado/link-estilizado";
 
 interface ItemPageProps {
 	params: { itemSlug: string };
 }
 
 const ItemPage: FC<ItemPageProps> = ({ params }) => {
+	const { itemSlug } = params;
 	return (
 		<>
 			<MainPadrao>
+				<LinkEstilizado href={`/#${params}`}>Voltar</LinkEstilizado>
 				<Image
 					src={testeImagem}
 					alt="teste"
 					className="w-full h-[30rem] rounded-luand overflow-hidden object-none"
 				/>
-				<Titulo>Referencia: {params.itemSlug}</Titulo>
+				<Titulo>Referencia: {itemSlug}</Titulo>
 				<p className="self-start">
 					T-Shirts de material Menegotti 100% algodão.
 					<br />

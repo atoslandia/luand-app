@@ -22,8 +22,8 @@ export default function EstoqueTabela() {
 	}
 
 	return (
-		<>
-			<table className="rounded-luand overflow-hidden ring-2 ring-tertiary">
+		<div className=" flex flex-col items-center border-2 border-tertiary overflow-hidden rounded-luand">
+			<table className="border-b-2 border-tertiary">
 				<thead className="bg-tertiary">
 					<tr>
 						<th>Cor</th>
@@ -32,18 +32,16 @@ export default function EstoqueTabela() {
 						<th>G</th>
 					</tr>
 				</thead>
-				<tbody>
-					{linhas.map((linha, index) => (
-						<tr key={index} className="divide-x-2 divide-tertiary text-center">
-							{linha}
-						</tr>
-					))}
-				</tbody>
+				<tbody>{...linhas}</tbody>
 			</table>
-			<div className="flex">
-				<Botao onClick={adicionarLinha}>Adicionar </Botao>
-				<Botao onClick={removerLinha}>Remover </Botao>
+			<div className="p-2 w-full flex gap-2">
+				<Botao onClick={adicionarLinha} estilo="w-full">
+					Adicionar
+				</Botao>
+				<Botao onClick={removerLinha} estilo="w-full">
+					Remover
+				</Botao>
 			</div>
-		</>
+		</div>
 	);
 }

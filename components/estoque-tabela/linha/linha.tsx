@@ -1,4 +1,3 @@
-import Botao from "@/components/botao/botao";
 import NumeroInput from "@/components/numero-input/numero-input";
 import { FC } from "react";
 
@@ -6,20 +5,20 @@ interface LinhaProps {}
 
 const Linha: FC<LinhaProps> = () => {
 	return (
-		<>
+		<tr className="divide-x-2 divide-tertiary text-center">
 			<td className="p-2 ">
-				<input placeholder="Cor" type="color" className="w-24 h-10" />
+				<input required placeholder="Cor" name="cor" type="color" className="size-10" />
 			</td>
 			<td className="p-2">
-				<NumeroInput titulo="Quantidade P" />
+				<NumeroInput name="tamanhoP" titulo="Quantidade P" />
 			</td>
 			<td className="p-2">
-				<NumeroInput titulo="Quantidade M" />
+				<NumeroInput name="tamanhoM" titulo="Quantidade M" />
 			</td>
 			<td className="p-2">
-				<NumeroInput titulo="Quantidade G" />
+				<NumeroInput name="tamanhoG" titulo="Quantidade G" />
 			</td>
-		</>
+		</tr>
 	);
 };
 
